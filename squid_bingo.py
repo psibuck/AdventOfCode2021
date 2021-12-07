@@ -32,14 +32,8 @@ class Board:
             else:
                 col += 1
 
-            print("ROW: " + str(row) + "  COL: " + str(col))
             if entry != INVALID_CHARACTER and value == int(entry):
-                #print("SCORE! " + str(value))
-                #print("BEFORE")
-                #self.print_board()
                 self.nums[count] = INVALID_CHARACTER
-                #print("AFTER")
-                #self.print_board()
                 self.points += 1
                 break
             count += 1
